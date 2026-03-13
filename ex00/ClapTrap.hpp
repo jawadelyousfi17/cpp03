@@ -1,3 +1,6 @@
+#ifndef CLAPTRAP_HPP
+#define CLAPTRAP_HPP
+
 #include <iostream>
 #include <string>
 
@@ -9,7 +12,7 @@ private:
     int _attackDamage;
 public:
     ClapTrap();
-    ClapTrap(std::string _name);
+    ClapTrap(std::string name);
     ClapTrap(const ClapTrap& other);
     ClapTrap &operator=(const ClapTrap& other);
     ~ClapTrap();
@@ -17,3 +20,5 @@ public:
     void takeDamage(unsigned int amount);
     void beRepaired(unsigned int amount);
 };
+
+#endif
